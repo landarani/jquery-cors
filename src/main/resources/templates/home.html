@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<title>Origin of the CORS example</title>
+<script src="/webjars/jquery/jquery.js"></script>
+<script th:src="@{/assets/js/main.js}"></script>
+</head>
+<body>
+	<h1>You are At Origin</h1>
+	Username:
+	<input id="username" type="text" />
+	<button id="refreshToken">Refresh Token</button>
+	<br /> Token:
+	<textarea rows="4" cols="65" id="token"></textarea>
+	<button id="login">Login</button>
+	<button id="hello">Hello!</button>
+	<br />
+	<hr />
+	<br /> Response:
+	<textarea rows="2" cols="30" id="response"></textarea>
+	<br /> Error:
+	<textarea rows="2" cols="30" id="error"></textarea>
+</body>
+</html>
